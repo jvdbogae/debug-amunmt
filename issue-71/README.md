@@ -5,7 +5,7 @@ The commands issued are:
 prefix=model/model.npz
 dev=data/newsdev2016.bpe.ro
 ref=data/newsdev2016.tok.en
-cat $dev | ../../build/amun -c $prefix.dev.npz.amun.yml -b 12 -n --mini-batch 10 --maxi-batch 100 \
+cat $dev | ../../build/amun -c $prefix.dev.npz.amun.yml -b 12 -n --mini-batch 10 --maxi-batch 100 
 
 ```
 
