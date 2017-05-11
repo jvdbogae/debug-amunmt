@@ -1,0 +1,62 @@
+model: model/model.npz
+vocabs:
+  - model/vocab.ro.yml
+  - model/vocab.en.yml
+type: amun
+dim-vocabs:
+  - 66000
+  - 50000
+dim-emb: 512
+dim-rnn: 1024
+layers-enc: 1
+layers-dec: 1
+skip: false
+layer-normalization: true
+dropout-rnn: 0.2
+dropout-src: 0.1
+dropout-trg: 0.1
+overwrite: false
+no-reload: false
+train-sets:
+  - data/corpus.bpe.ro
+  - data/corpus.bpe.en
+after-epochs: 0
+after-batches: 0
+disp-freq: 1000
+save-freq: 10000
+no-shuffle: false
+tempdir: /tmp
+optimizer: adam
+learn-rate: 0.0001
+mini-batch-words: 0
+dynamic-batching: true
+clip-norm: 1
+moving-average: true
+moving-decay: 0.999
+valid-sets:
+  - data/newsdev2016.bpe.ro
+  - data/newsdev2016.bpe.en
+valid-freq: 10000
+valid-metrics:
+  - cross-entropy
+  - valid-script
+valid-script-path: ./scripts/validate.sh
+early-stopping: 5
+keep-best: false
+valid-log: model/valid.log
+normalize: false
+beam-size: 12
+allow-unk: false
+workspace: 5500
+log: model/train.log
+seed: 0
+relative-paths: false
+devices:
+  - 0
+  - 1
+mini-batch: 64
+maxi-batch: 100
+max-length: 50
+progress:
+  epochs: 2
+  batches: 20000

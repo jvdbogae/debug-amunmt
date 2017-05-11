@@ -1,0 +1,128 @@
+[2017-05-10 10:25:07] [config] after-batches: 0
+[2017-05-10 10:25:07] [config] after-epochs: 0
+[2017-05-10 10:25:07] [config] allow-unk: false
+[2017-05-10 10:25:07] [config] beam-size: 12
+[2017-05-10 10:25:07] [config] clip-norm: 1
+[2017-05-10 10:25:07] [config] devices:
+[2017-05-10 10:25:07] [config]   - 0
+[2017-05-10 10:25:07] [config]   - 1
+[2017-05-10 10:25:07] [config] dim-emb: 512
+[2017-05-10 10:25:07] [config] dim-rnn: 1024
+[2017-05-10 10:25:07] [config] dim-vocabs:
+[2017-05-10 10:25:07] [config]   - 66000
+[2017-05-10 10:25:07] [config]   - 50000
+[2017-05-10 10:25:07] [config] disp-freq: 1000
+[2017-05-10 10:25:07] [config] dropout-rnn: 0.2
+[2017-05-10 10:25:07] [config] dropout-src: 0.1
+[2017-05-10 10:25:07] [config] dropout-trg: 0.1
+[2017-05-10 10:25:07] [config] dynamic-batching: true
+[2017-05-10 10:25:07] [config] early-stopping: 5
+[2017-05-10 10:25:07] [config] keep-best: false
+[2017-05-10 10:25:07] [config] layer-normalization: true
+[2017-05-10 10:25:07] [config] layers-dec: 1
+[2017-05-10 10:25:07] [config] layers-enc: 1
+[2017-05-10 10:25:07] [config] learn-rate: 0.0001
+[2017-05-10 10:25:07] [config] log: model/train.log
+[2017-05-10 10:25:07] [config] max-length: 50
+[2017-05-10 10:25:07] [config] maxi-batch: 100
+[2017-05-10 10:25:07] [config] mini-batch: 64
+[2017-05-10 10:25:07] [config] mini-batch-words: 0
+[2017-05-10 10:25:07] [config] model: model/model.npz
+[2017-05-10 10:25:07] [config] moving-average: true
+[2017-05-10 10:25:07] [config] moving-decay: 0.999
+[2017-05-10 10:25:07] [config] no-reload: false
+[2017-05-10 10:25:07] [config] no-shuffle: false
+[2017-05-10 10:25:07] [config] normalize: false
+[2017-05-10 10:25:07] [config] optimizer: adam
+[2017-05-10 10:25:07] [config] overwrite: false
+[2017-05-10 10:25:07] [config] relative-paths: false
+[2017-05-10 10:25:07] [config] save-freq: 10000
+[2017-05-10 10:25:07] [config] seed: 0
+[2017-05-10 10:25:07] [config] skip: false
+[2017-05-10 10:25:07] [config] tempdir: /tmp
+[2017-05-10 10:25:07] [config] train-sets:
+[2017-05-10 10:25:07] [config]   - data/corpus.bpe.ro
+[2017-05-10 10:25:07] [config]   - data/corpus.bpe.en
+[2017-05-10 10:25:07] [config] type: amun
+[2017-05-10 10:25:07] [config] valid-freq: 10000
+[2017-05-10 10:25:07] [config] valid-log: model/valid.log
+[2017-05-10 10:25:07] [config] valid-metrics:
+[2017-05-10 10:25:07] [config]   - cross-entropy
+[2017-05-10 10:25:07] [config]   - valid-script
+[2017-05-10 10:25:07] [config] valid-script-path: ./scripts/validate.sh
+[2017-05-10 10:25:07] [config] valid-sets:
+[2017-05-10 10:25:07] [config]   - data/newsdev2016.bpe.ro
+[2017-05-10 10:25:07] [config]   - data/newsdev2016.bpe.en
+[2017-05-10 10:25:07] [config] vocabs:
+[2017-05-10 10:25:07] [config]   - model/vocab.ro.yml
+[2017-05-10 10:25:07] [config]   - model/vocab.en.yml
+[2017-05-10 10:25:07] [config] workspace: 5500
+[2017-05-10 10:25:07] [data] Loading vocabulary from model/vocab.ro.yml (max: 66000)
+[2017-05-10 10:25:07] [data] Loading vocabulary from model/vocab.en.yml (max: 50000)
+[2017-05-10 10:25:07] [batching] Collecting statistics for dynamic batching
+[2017-05-10 10:25:08] [memory] Extending reserved space to 5632 MB (device 0)
+[2017-05-10 10:25:09] [memory] Extending reserved space to 5632 MB (device 1)
+[2017-05-10 10:25:09] [memory] Reserving space for 118908752 floats (453 MB, device 0)
+[2017-05-10 10:25:10] [memory] Reserving space for 118908752 floats (453 MB, device 0)
+[2017-05-10 10:27:07] [batching] Done
+[2017-05-10 10:27:07] [memory] Extending reserved space to 5632 MB (device 0)
+[2017-05-10 10:27:07] [memory] Extending reserved space to 5632 MB (device 1)
+[2017-05-10 10:27:07] [data] Shuffling files
+[2017-05-10 10:27:14] [data] Done
+[2017-05-10 10:27:17] [memory] Reserving space for 118908752 floats (453 MB, device 0)
+[2017-05-10 10:27:18] [memory] Reserving space for 118908752 floats (453 MB, device 1)
+[2017-05-10 10:27:19] [memory] Reserving space for 59454376 floats (226 MB, device 0)
+[2017-05-10 10:27:19] [memory] Reserving space for 59454376 floats (226 MB, device 1)
+[2017-05-10 10:27:19] [memory] Reserving space for 59454376 floats (226 MB, device 0)
+[2017-05-10 10:27:19] [memory] Reserving space for 59454376 floats (226 MB, device 1)
+[2017-05-10 10:27:19] [memory] Reserving space for 59454376 floats (226 MB, device 0)
+[2017-05-10 10:27:19] [memory] Reserving space for 59454376 floats (226 MB, device 1)
+[2017-05-10 10:27:19] [memory] Reserving space for 118908752 floats (453 MB, device 1)
+[2017-05-10 10:27:19] [memory] Reserving space for 118908752 floats (453 MB, device 0)
+[2017-05-10 10:27:19] [memory] Reserving space for 59454376 floats (226 MB, device 1)
+[2017-05-10 10:27:19] [memory] Reserving space for 59454376 floats (226 MB, device 0)
+[2017-05-10 10:27:19] [memory] Reserving space for 59454376 floats (226 MB, device 1)
+[2017-05-10 10:27:19] [memory] Reserving space for 59454376 floats (226 MB, device 0)
+[2017-05-10 10:39:06] Ep. 1 : Up. 1000 : Sen. 200680 : Cost 14.08 : Time 718.23s : 6958.23 words/s
+[2017-05-10 10:50:56] Ep. 1 : Up. 2000 : Sen. 400390 : Cost 3.09 : Time 710.78s : 6978.95 words/s
+[2017-05-10 11:02:51] Ep. 1 : Up. 3000 : Sen. 600710 : Cost 2.91 : Time 714.12s : 6978.81 words/s
+[2017-05-10 11:14:44] Ep. 1 : Up. 4000 : Sen. 800400 : Cost 2.76 : Time 713.24s : 6970.11 words/s
+[2017-05-10 11:26:35] Ep. 1 : Up. 5000 : Sen. 999370 : Cost 2.72 : Time 711.24s : 6936.42 words/s
+[2017-05-10 11:38:30] Ep. 1 : Up. 6000 : Sen. 1199010 : Cost 2.67 : Time 715.08s : 6945.40 words/s
+[2017-05-10 11:51:57] Ep. 1 : Up. 7000 : Sen. 1399440 : Cost 2.67 : Time 806.87s : 6199.34 words/s
+[2017-05-10 12:04:09] Ep. 1 : Up. 8000 : Sen. 1599410 : Cost 2.65 : Time 732.38s : 6796.01 words/s
+[2017-05-10 12:16:04] Ep. 1 : Up. 9000 : Sen. 1799330 : Cost 2.67 : Time 714.15s : 6957.93 words/s
+[2017-05-10 12:28:00] Ep. 1 : Up. 10000 : Sen. 1998380 : Cost 2.64 : Time 716.12s : 6914.42 words/s
+[2017-05-10 12:28:00] Saving model to model/model.iter10000.npz
+[2017-05-10 12:28:01] Saving model to model/model.npz
+[2017-05-10 12:28:05] [valid] 10000 : cross-entropy : 2.57858 : new best
+[2017-05-10 12:28:05] Saving model to model/model.npz.dev.npz
+[2017-05-10 12:28:07] [valid] 10000 : valid-script : 0 : new best
+[2017-05-10 12:40:01] Ep. 1 : Up. 11000 : Sen. 2198130 : Cost 2.63 : Time 720.87s : 6873.28 words/s
+[2017-05-10 12:40:02] Seen 2198280 samples
+[2017-05-10 12:40:02] Starting epoch 2
+[2017-05-10 12:40:02] [data] Shuffling files
+[2017-05-10 12:40:09] [data] Done
+[2017-05-10 12:52:04] Ep. 2 : Up. 12000 : Sen. 199550 : Cost 2.62 : Time 723.87s : 6885.91 words/s
+[2017-05-10 13:04:36] Ep. 2 : Up. 13000 : Sen. 398180 : Cost 2.64 : Time 751.23s : 6573.52 words/s
+[2017-05-10 13:16:31] Ep. 2 : Up. 14000 : Sen. 597195 : Cost 2.61 : Time 715.60s : 6915.92 words/s
+[2017-05-10 13:28:28] Ep. 2 : Up. 15000 : Sen. 797410 : Cost 2.60 : Time 716.82s : 6928.87 words/s
+[2017-05-10 13:40:28] Ep. 2 : Up. 16000 : Sen. 998130 : Cost 2.62 : Time 720.18s : 6938.73 words/s
+[2017-05-10 13:52:24] Ep. 2 : Up. 17000 : Sen. 1197500 : Cost 2.60 : Time 715.28s : 6923.92 words/s
+[2017-05-10 14:04:24] Ep. 2 : Up. 18000 : Sen. 1397570 : Cost 2.62 : Time 720.15s : 6911.88 words/s
+[2017-05-10 14:16:19] Ep. 2 : Up. 19000 : Sen. 1596330 : Cost 2.62 : Time 714.85s : 6922.36 words/s
+[2017-05-10 14:28:17] Ep. 2 : Up. 20000 : Sen. 1794459 : Cost 2.60 : Time 718.48s : 6874.92 words/s
+[2017-05-10 14:28:17] Saving model to model/model.iter20000.npz
+[2017-05-10 14:28:18] Saving model to model/model.npz
+[2017-05-10 14:28:22] [valid] 20000 : cross-entropy : 2.57616 : new best
+[2017-05-10 14:28:22] Saving model to model/model.npz.dev.npz
+[2017-05-10 14:28:24] [valid] 20000 : valid-script : 0 : stalled 1 times
+[2017-05-10 14:40:20] Ep. 2 : Up. 21000 : Sen. 1994525 : Cost 2.61 : Time 723.49s : 6854.74 words/s
+[2017-05-10 14:52:18] Ep. 2 : Up. 22000 : Sen. 2193842 : Cost 2.60 : Time 717.88s : 6920.66 words/s
+[2017-05-10 14:52:36] Seen 2198770 samples
+[2017-05-10 14:52:36] Starting epoch 3
+[2017-05-10 14:52:36] [data] Shuffling files
+[2017-05-10 14:52:43] [data] Done
+[2017-05-10 15:04:24] Ep. 3 : Up. 23000 : Sen. 196120 : Cost 2.59 : Time 725.46s : 6874.10 words/s
+[2017-05-10 15:16:25] Ep. 3 : Up. 24000 : Sen. 396970 : Cost 2.61 : Time 721.19s : 6924.72 words/s
+[2017-05-10 15:28:28] Ep. 3 : Up. 25000 : Sen. 596930 : Cost 2.59 : Time 722.60s : 6885.37 words/s

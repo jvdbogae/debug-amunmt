@@ -1,0 +1,4 @@
+[2017-05-10 12:28:05] [valid] 10000 : cross-entropy : 2.57858 : new best
+[2017-05-10 12:28:07] [valid] 10000 : valid-script : 0 : new best
+[2017-05-10 14:28:22] [valid] 20000 : cross-entropy : 2.57616 : new best
+[2017-05-10 14:28:24] [valid] 20000 : valid-script : 0 : stalled 1 times
